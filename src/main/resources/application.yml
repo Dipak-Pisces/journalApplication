@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://pdipak945:eoMNDd8MzO3tRm92@cluster0.zaspy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: journaldb
+      auto-index-creation: true
+  profiles:
+    active: dev
+
+sonar:
+  host:
+    url: http://localhost:9000
+  token: sqa_f02386fe0345fb23406caa8a1d21099941273803
