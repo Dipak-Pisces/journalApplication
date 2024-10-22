@@ -11,3 +11,8 @@ sonar:
   host:
     url: http://localhost:9000
   token: sqa_f02386fe0345fb23406caa8a1d21099941273803
+
+weatherService:
+  api:
+    key: dde4fc345beba68610621fe67ccd517e
+    string: http://api.weatherstack.com/current?access_key=API_KEY&query=CITY

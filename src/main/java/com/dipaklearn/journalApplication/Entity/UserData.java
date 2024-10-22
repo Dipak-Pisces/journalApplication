@@ -1,9 +1,6 @@
 package com.dipaklearn.journalApplication.Entity;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.Setter;
+import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -16,6 +13,8 @@ import java.util.List;
 @Document
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class UserData {
 
@@ -28,6 +27,10 @@ public class UserData {
 
     @NonNull
     private String password;
+
+    private String email;
+
+    private boolean sentimentalAnalysis;
 
     private List<JournalData> journal_entries = new ArrayList<>();
 
